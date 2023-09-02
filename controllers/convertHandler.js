@@ -64,8 +64,7 @@ function ConvertHandler() {
     }
 
     if (count == 6) {
-      console.log("badUnit");
-      return "badUnit";
+      return "invalid unit";
     }
   };
 
@@ -112,7 +111,6 @@ function ConvertHandler() {
 
     for (const key in convertObj) {
       if (key == initUnit) {
-        console.log(typeof convertObj[key]);
         return Number(convertObj[key]);
       }
     }
